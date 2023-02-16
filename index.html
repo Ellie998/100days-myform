@@ -18,7 +18,7 @@
       <h1>Contact Us</h1>
     </header>
     <main>
-      <form action="" method="POST">
+      <form action="./index.html" method="GET">
         <section id="flex-column">
           <h2>How can we help you?</h2>
           <ul>
@@ -39,12 +39,12 @@
             <li>
               <label for="userphone">Your Phone Number</label>
               <input
-                type="number"
+                type="tel"
                 name="user-phone-num"
                 id="userphone"
                 required
                 placeholder="010-1234-5678"
-                minlength="10"
+                minlength="5"
               />
             </li>
             <li>
@@ -55,69 +55,63 @@
                 cols="30"
                 rows="10"
                 required
+                minlength="5"
+                maxlength="200"
               ></textarea>
-            </li>
-            <li>
-              <label for="userfind">How did you find us?</label>
-              <select name="user-find" id="userfind">
-                <option value="search">Web Search</option>
-                <option value="recomend">Recommendation</option>
-                <option value="etc">ETC</option>
-              </select>
             </li>
           </ul>
         </section>
         <section>
+          <label for="userfind">How did you find us?</label>
+          <select name="user-find" id="userfind" required>
+            <option value="search">Web Search</option>
+            <option value="recomend">Recommendation</option>
+            <option value="etc">ETC</option>
+          </select>
+        </section>
+        <section>
           <h2>How should we reply?</h2>
           <ul>
-            <li>
+            <li class="inline-controls">
               <input
                 type="radio"
                 name="user-reply"
-                id="call"
+                id="reply-phone"
                 required
-                value="call"
-                class="check-input-margin"
+                value="phone"
+                class="inline-controls"
               />
               <label for="call">Call me</label>
             </li>
-            <li>
+            <li class="inline-controls">
               <input
                 type="radio"
                 name="user-reply"
-                id="email"
+                id="reply-email"
                 required
                 value="email"
-                class="check-input-margin"
               />
               <label for="email">Send me an email</label>
             </li>
-            <li>
+            <li class="inline-controls">
               <input
                 type="radio"
                 name="user-reply"
-                id="nope"
+                id="reply-none"
                 required
                 value="nope"
-                class="check-input-margin"
               />
               <label for="nope">Don't reply</label>
             </li>
           </ul>
         </section>
-        <section>
-          <input type="checkbox" name="terms" id="terms" />
+        <section class="inline-controls">
+          <input type="checkbox" name="accept-terms" id="terms" required />
           <label for="terms">Accept Terms</label>
         </section>
-        <section id="section-btn">
-          <ul>
-            <li>
-              <button type="reset" class="btn-white">Clear</button>
-            </li>
-            <li>
-              <button type="submit" class="btn-blue">Submit</button>
-            </li>
-          </ul>
+        <section id="form-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
         </section>
       </form>
     </main>

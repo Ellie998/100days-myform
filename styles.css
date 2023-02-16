@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   list-style: none;
   padding:0;
 }
@@ -10,36 +10,109 @@ body {
 
 header {
   text-align: center;
+  margin: 2rem;
 }
 
-main {
+form {
   background-color: rgb(250, 250, 250);
-  width: 40%;
-  margin: 0 auto;
-  padding: 1.5rem;
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(246, 250, 255);
+  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgb(215, 215, 215);
+  box-shadow: 0px 2px 8px rgb(215, 215, 215);
 }
 
+label {
+  color:rgb(42, 55, 83);
+  display: block;
+  margin-bottom: 0.5rem;}
+
+  input, textarea, select {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid rgb(152, 159, 184);
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 section {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 h2 {
   margin:1rem 0;
 }
 
+textarea {
+  resize: none;
+}
+
+textarea:focus {
+  background-color: rgb(217, 227, 247);
+}
+
+button {
+  font: inherit;
+  border: 1px solid rgb(51, 67, 100);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+#form-actions {
+  text-align:right;
+}
+
+
+.btn-filled {
+  background-color: rgb(51, 67, 100);
+  color: white;
+}
+
+.btn-empty {
+  background-color: transparent;
+  color: rgb(51, 67, 100);
+}
+
+.btn-filled:hover {
+  background-color: rgb(72, 94, 139);
+  border-color: rgb(69,89, 129);
+}
+
+.btn-empty:hover {
+  background-color: rgb(203, 220, 252);
+}
+
+
+.inline-controls {
+  display: flex;
+}
+.inline-controls input {
+  width: auto;
+}
+
+.inline-controls label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+
+/*
+
 .check-input-margin {
   margin-right: 0.25rem; 
+
 }
 
 #flex-column input, #flex-colunm label {
   margin: 0.25rem 0;
   box-sizing: border-box;
   width: 100%;
-}
-
+} 
 #flex-column li {
   display: flex;
   flex-direction: column;
@@ -58,26 +131,26 @@ h2 {
   box-shadow: 1px 1px 2px rgba(54,54,54,0.2);
 }
 
-.btn-white {
+.btn-empty {
   background-color: rgb(250, 250, 250);
   border-color: rgb(17, 89, 214);
   margin-right: 0.25rem;
 }
 
-.btn-white:hover {
+.btn-empty:hover {
   background-color: aliceblue;
   border-color: rgb(17, 89, 214);
 }
 
 
-.btn-blue {
+.btn-filled {
   color: rgb(250, 250, 250);
   background-color: rgb(1, 21, 58);
   border-color: rgb(1, 13, 34);
 }
 
-.btn-blue:hover {
+.btn-filled:hover {
   background-color: rgb(16, 50, 113);
 }
 
-
+ */
