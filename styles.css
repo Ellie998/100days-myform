@@ -1,0 +1,83 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  padding:0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  background-color: rgb(250, 250, 250);
+  width: 40%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgb(215, 215, 215);
+}
+
+
+section {
+  margin: 1rem 0;
+}
+
+h2 {
+  margin:1rem 0;
+}
+
+.check-input-margin {
+  margin-right: 0.25rem; 
+}
+
+#flex-column input, #flex-colunm label {
+  margin: 0.25rem 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#flex-column li {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+
+#section-btn ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#section-btn button {
+  padding: 0.25rem 1rem ;
+  font-size: inherit;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(54,54,54,0.2);
+}
+
+.btn-white {
+  background-color: rgb(250, 250, 250);
+  border-color: rgb(17, 89, 214);
+  margin-right: 0.25rem;
+}
+
+.btn-white:hover {
+  background-color: aliceblue;
+  border-color: rgb(17, 89, 214);
+}
+
+
+.btn-blue {
+  color: rgb(250, 250, 250);
+  background-color: rgb(1, 21, 58);
+  border-color: rgb(1, 13, 34);
+}
+
+.btn-blue:hover {
+  background-color: rgb(16, 50, 113);
+}
+
+
